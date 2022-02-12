@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div style="text-align:center">
+      <h1 class="titulo">Juego del Ahorcado</h1>
+      <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
+    </div>
+    <div style="text-align:center">
+      <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
+    </div>
+    <div id="area-juego" style="text-align:center;">
+      <canvas id="ahorcado" height="400px" width="1200px"></canvas>
+        <div class ="mensaje" >
+          <div id="resultadoGanador"></div>
+          <div id="resultadoPerdido"></div>
+            <h3 class="tituloCorrecto"> LETRAS ENCONTRADAS</h3> 
+              <div id= "palabra"></div>
+              <div id= "palabraSecreta"></div>
+              <h2 id= "tituloLetras" ></h2>
+          <h3 class="tituloError"> LETRAS INCORRECTAS</h3>
+            <div id= "letrasError"></div>
+          <div id="vidas"></div>
+        
+          <button class="btn" id="reiniciar-juego" onclick=" location.reload() "> NUEVO JUEGO </button>
+    </div>
+    <footer class="footer">
+      <p>" © 2022 "
+        <a href= "https://www.linkedin.com/in/gonzalo-narbona-48861986/">
+          <b>Gonzalo Narbona</b>
+        </a>  
+        " - Todos los derechos reservados"
+      </p>
+    </footer>
+    
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+  </body>
+</html>
